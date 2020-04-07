@@ -1,0 +1,2 @@
+rootProject.name='ISC-19'
+include ':app'

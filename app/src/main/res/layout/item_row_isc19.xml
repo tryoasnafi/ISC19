@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_8dp"
+    android:layout_marginTop="@dimen/margin_4dp"
+    android:layout_marginRight="@dimen/margin_8dp"
+    android:layout_marginBottom="@dimen/margin_4dp"
+    android:background="@drawable/roundshape"
+    android:elevation="@dimen/margin_4dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        tools:src="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/img_thumbnail"
+        android:textSize="16sp"
+        tools:text="@string/title" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        fontPath="fonts/IBMPlexSans-Italic.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toEndOf="@id/img_thumbnail"
+        android:paddingEnd="@dimen/margin_8dp"
+        tools:ignore="MissingPrefix"
+        tools:text="@string/date" />
+
+    <TextView
+        android:id="@+id/tv_writer"
+        fontPath="fonts/IBMPlexSans-Italic.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toEndOf="@id/tv_date"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix"
+        tools:text="@string/writer" />
+</RelativeLayout>
